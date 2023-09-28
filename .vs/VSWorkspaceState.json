@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\.github",
+    "\\.github\\workflows"
   ],
-  "SelectedNode": "\\C:\\Users\\emkay\\Source\\Repos\\Laba03_Maksym_Kyrychenko",
+  "SelectedNode": "\\test_calculator.py",
   "PreviewInSolutionExplorer": false
 }
