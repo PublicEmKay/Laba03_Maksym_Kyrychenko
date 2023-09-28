@@ -1,0 +1,32 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main # Change to the appropriate branch on which you want to run the pipeline
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        parallel-step: [test, lint]
+
+    steps:
+    - name: Check Out Repository
+      uses: actions/checkout@v2
+
+    - name: Run Tests
+      if: matrix.parallel-step == 'test'
+      run: |
+        pip install pytest
+        pytest()
+
+    - name: Run Linter
+      if: matrix.parallel-step == 'lint'
+      run: |
+        # Install a linter flake8
+        pip install flake8
+        # Run a linter to check the style of Python code
+        flake8 .
