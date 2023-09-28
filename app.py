@@ -19,6 +19,7 @@ def divide(x, y):
         return "Division by zero is not possible"
     return x / y
 
+
 while True:
     print("Select an operation:")
     print("1. Addition")
