@@ -2,13 +2,16 @@
 def add(x, y):
     return x + y
 
+
 # Function for subtraction
 def subtract(x, y):
     return x - y
 
+
 # Function for multiplication
 def multiply(x, y):
     return x * y
+
 
 # Function for dividing
 def divide(x, y):
