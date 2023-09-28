@@ -21,7 +21,7 @@ jobs:
       if: matrix.parallel-step == 'test'
       run: |
         pip install pytest
-        pytest test_calculator.py
+        pytest -s test_calculator.py
 
     - name: Run Linter
       if: matrix.parallel-step == 'lint'
